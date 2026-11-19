@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak &amp; Kartu Digital — Ryan Hamid Muhammad, S.Tr.T</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="kontak">
+  <div class="bg-layer-ambient"></div>
+  <div class="bg-layer-paper"></div>
+  <div class="bg-layer-grid"></div>
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Floating Top Navigation -->
+  <header class="top-nav-wrapper">
+    <nav class="top-nav-pill" aria-label="Navigasi Utama">
+      <a href="index.html" class="brand-monogram">
+        <span class="brand-badge">RH</span>
+        <span class="text-sm font-semibold tracking-tight text-stone-900">Ryan Hamid</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><span class="slide-num">01</span> Profil</a>
+        <a href="cv.html" class="nav-link"><span class="slide-num">02</span> CV</a>
+        <a href="proyek.html" class="nav-link"><span class="slide-num">03</span> Proyek</a>
+        <a href="blog.html" class="nav-link"><span class="slide-num">04</span> Blog</a>
+        <a href="kontak.html" class="nav-link active"><span class="slide-num">05</span> Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide 05: Kontak & Kartu Nama Digital 3D -->
+  <main class="page-shell">
+    <section class="mb-7">
+      <span class="eyebrow-label mb-2">Slide 05 · Korespondensi &amp; Kartu Digital</span>
+      <h1 class="font-editorial text-3xl sm:text-4xl font-semibold text-stone-900">
+        Terhubung &amp; Diskusi Proyek
+      </h1>
+      <p class="text-sm text-stone-600 mt-1 max-w-2xl">
+        Terbuka untuk peluang karier penuh waktu, kolaborasi riset kecerdasan buatan, maupun pengembangan aplikasi web. Klik kartu nama digital di bawah untuk menampilkan QR Code portofolio.
+      </p>
+    </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start">
+      <!-- Kolom Kiri: Kartu Nama Digital 3D + Salin Kontak Cepat -->
+      <div class="lg:col-span-6 space-y-5">
+        <div class="editorial-card p-6 sm:p-7">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-code text-xs uppercase tracking-wider text-stone-500">Kartu Nama Digital 3D</span>
+            <button type="button" id="toggle-card-flip" class="text-xs font-semibold text-[#214E52] hover:underline cursor-pointer">
+              Balik Kartu (QR Code) ↻
+            </button>
+          </div>
+
+          <div class="flip-scene" title="Klik untuk membalik kartu">
+            <div id="business-flip-card" class="flip-card">
+              <!-- Sisi Depan -->
+              <div class="flip-face flip-front">
+                <div class="flex items-start justify-between">
+                  <div>
+                    <p class="font-code text-[11px] uppercase tracking-widest text-[#E6C79C]">
+                      AI &amp; Full-Stack Engineer
+                    </p>
+                    <h2 class="font-editorial text-2xl sm:text-3xl font-semibold mt-1">
+                      Ryan Hamid Muhammad, S.Tr.T
+                    </h2>
+                  </div>
+                  <span class="w-10 h-10 rounded-full border border-white/25 flex items-center justify-center font-editorial text-base font-bold">
+                    RH
+                  </span>
+                </div>
+
+                <div class="space-y-1 text-xs text-stone-200/90">
+                  <p>Teknologi Rekayasa Internet — PENS</p>
+                  <p>Lamongan &amp; Surabaya, Jawa Timur</p>
+                  <p class="font-code text-[11px] text-[#E6C79C] pt-1">ryanhamid527@gmail.com · +62 831-2967-3210</p>
+                </div>
+              </div>
+
+              <!-- Sisi Belakang (Menggunakan assets/qr-code.png milik user) -->
+              <div class="flip-face flip-back items-center justify-center text-center">
+                <p class="font-code text-[11px] uppercase tracking-wider text-[#214E52] mb-2">
+                  Pindai QR Code Portofolio
+                </p>
+                <div class="w-36 h-36 rounded-2xl border border-stone-900/15 bg-white p-2 flex items-center justify-center shadow-2xs">
+                  <img
+                    src="assets/qr-code.png"
+                    alt="QR Code Portofolio Ryan Hamid Muhammad"
+                    class="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+                <p class="text-[11px] text-stone-500 mt-2">
+                  Klik kartu untuk kembali ke sisi depan
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-stone-900/10 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="assets/qr-code.png"
+              download="QR-Code-Ryan-Hamid-Muhammad.png"
+              class="btn-outline text-xs"
+            >
+              Unduh Gambar QR Code ↓
+            </a>
+            <a
+              href="assets/CV-Ryan-Hamid-Muhammad.pdf"
+              download="CV-Ryan-Hamid-Muhammad.pdf"
+              class="btn-primary text-xs"
+            >
+              Unduh CV &amp; Ijazah (PDF) ↓
+            </a>
+          </div>
+        </div>
+
+        <!-- Salin Kontak Cepat -->
+        <div class="editorial-card p-6 space-y-3">
+          <h3 class="font-editorial text-xl font-semibold text-stone-900">Saluran Kontak Langsung</h3>
+
+          <div class="sand-panel p-3.5 flex items-center justify-between gap-3">
+            <div>
+              <p class="font-code text-[11px] text-stone-500">Email Utama</p>
+              <p class="text-sm font-medium text-stone-900">ryanhamid527@gmail.com</p>
+            </div>
+            <button
+              type="button"
+              onclick="copyText('ryanhamid527@gmail.com', 'Alamat email')"
+              class="btn-outline text-xs py-1.5 px-3"
+            >
+              Salin
+            </button>
+          </div>
+
+          <div class="sand-panel p-3.5 flex items-center justify-between gap-3">
+            <div>
+              <p class="font-code text-[11px] text-stone-500">WhatsApp / Telepon</p>
+              <p class="text-sm font-medium text-stone-900">+62 831-2967-3210</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                type="button"
+                onclick="copyText('+62 831-2967-3210', 'Nomor WhatsApp')"
+                class="btn-outline text-xs py-1.5 px-3"
+              >
+                Salin
+              </button>
+              <a
+                href="https://wa.me/6283129673210"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary text-xs py-1.5 px-3"
+              >
+                Chat
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 pt-1">
+            <a
+              href="https://github.com/ryanhamid"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline text-xs"
+            >
+              GitHub Profile ↗
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ryan-hamid-muhammad"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline text-xs"
+            >
+              LinkedIn Profile ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Formulir Pesan Pengunjung -->
+      <div class="lg:col-span-6 editorial-card p-6 sm:p-8">
+        <span class="eyebrow-label mb-2">Kirim Pesan</span>
+        <h2 class="font-editorial text-2xl sm:text-3xl font-semibold text-stone-900 mb-2">
+          Korespondensi Pengunjung
+        </h2>
+        <p class="text-sm text-stone-600 mb-6">
+          Silakan tinggalkan pesan terkait peluang kerja, diskusi teknis, atau kolaborasi pengembangan perangkat lunak.
+        </p>
+
+        <form id="visitor-contact-form" class="space-y-4">
+          <div>
+            <label for="sender-name" class="block text-xs font-semibold text-stone-700 mb-1.5">Nama Lengkap</label>
+            <input
+              type="text"
+              id="sender-name"
+              required
+              placeholder="Contoh: Budi Santoso / HRD PT Teknologi"
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-stone-300 text-sm focus:outline-none focus:border-[#214E52]"
+            />
+          </div>
+
+          <div>
+            <label for="sender-email" class="block text-xs font-semibold text-stone-700 mb-1.5">Alamat Email</label>
+            <input
+              type="email"
+              id="sender-email"
+              required
+              placeholder="nama@perusahaan.com"
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-stone-300 text-sm focus:outline-none focus:border-[#214E52]"
+            />
+          </div>
+
+          <div>
+            <label for="sender-subject" class="block text-xs font-semibold text-stone-700 mb-1.5">Subjek Diskusi</label>
+            <input
+              type="text"
+              id="sender-subject"
+              placeholder="Contoh: Undangan Wawancara / Kolaborasi Proyek AI"
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-stone-300 text-sm focus:outline-none focus:border-[#214E52]"
+            />
+          </div>
+
+          <div>
+            <label for="sender-message" class="block text-xs font-semibold text-stone-700 mb-1.5">Isi Pesan</label>
+            <textarea
+              id="sender-message"
+              rows="4"
+              required
+              placeholder="Tuliskan pesan Anda di sini..."
+              class="w-full px-4 py-2.5 rounded-xl bg-white border border-stone-300 text-sm focus:outline-none focus:border-[#214E52]"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary w-full">
+            Kirim Pesan via Email →
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Slide Dock -->
+  <div class="bottom-dock-wrapper">
+    <div class="bottom-dock">
+      <a href="blog.html" class="dock-arrow">← Blog</a>
+      <div class="dock-segments" aria-label="Indikator Halaman">
+        <a href="index.html" class="dock-segment" title="01 Profil"></a>
+        <a href="cv.html" class="dock-segment" title="02 CV"></a>
+        <a href="proyek.html" class="dock-segment" title="03 Proyek"></a>
+        <a href="blog.html" class="dock-segment" title="04 Blog"></a>
+        <a href="kontak.html" class="dock-segment active" title="05 Kontak"></a>
+      </div>
+      <a href="index.html" class="dock-arrow">Awal: Profil ↺</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Proyek — Ryan Hamid Muhammad, S.Tr.T</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="proyek">
+  <div class="bg-layer-ambient"></div>
+  <div class="bg-layer-paper"></div>
+  <div class="bg-layer-grid"></div>
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Floating Top Navigation -->
+  <header class="top-nav-wrapper">
+    <nav class="top-nav-pill" aria-label="Navigasi Utama">
+      <a href="index.html" class="brand-monogram">
+        <span class="brand-badge">RH</span>
+        <span class="text-sm font-semibold tracking-tight text-stone-900">Ryan Hamid</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><span class="slide-num">01</span> Profil</a>
+        <a href="cv.html" class="nav-link"><span class="slide-num">02</span> CV</a>
+        <a href="proyek.html" class="nav-link active"><span class="slide-num">03</span> Proyek</a>
+        <a href="blog.html" class="nav-link"><span class="slide-num">04</span> Blog</a>
+        <a href="kontak.html" class="nav-link"><span class="slide-num">05</span> Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide 03: Portofolio Proyek -->
+  <main class="page-shell">
+    <section class="mb-7">
+      <span class="eyebrow-label mb-2">Slide 03 · Studi Kasus &amp; Implementasi</span>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h1 class="font-editorial text-3xl sm:text-4xl font-semibold text-stone-900">
+            Portofolio Proyek Rekayasa
+          </h1>
+          <p class="text-sm text-stone-600 mt-1 max-w-2xl">
+            Kumpulan sistem kecerdasan buatan, aplikasi web full-stack, integrasi RFID industri, dan arsitektur infrastruktur server yang telah dikembangkan.
+          </p>
+        </div>
+
+        <!-- Filter Kategori -->
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Filter Kategori Proyek">
+          <button type="button" data-filter="Semua" class="filter-pill active">Semua</button>
+          <button type="button" data-filter="AI &amp; Keamanan" class="filter-pill">AI &amp; Keamanan</button>
+          <button type="button" data-filter="Web &amp; Full-Stack" class="filter-pill">Web &amp; Full-Stack</button>
+          <button type="button" data-filter="IoT &amp; Sistem" class="filter-pill">IoT &amp; Sistem</button>
+        </div>
+      </div>
+
+      <!-- Banner Filter Keahlian dari CV -->
+      <div id="active-skill-banner" class="hidden mt-4 sand-panel px-4 py-3 items-center justify-between gap-3">
+        <p class="text-xs sm:text-sm text-stone-700">
+          Menampilkan proyek yang menggunakan keahlian:
+          <strong id="active-skill-label" class="text-[#214E52] font-semibold"></strong>
+        </p>
+        <button type="button" id="clear-skill-filter" class="text-xs font-semibold text-[#9A6B3E] hover:underline cursor-pointer">
+          Hapus Filter ✕
+        </button>
+      </div>
+    </section>
+
+    <!-- Grid Kartu Proyek (Diisi oleh js/app.js) -->
+    <section id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></section>
+  </main>
+
+  <!-- Modal Detail Proyek -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div id="project-modal-body" class="modal-panel"></div>
+  </div>
+
+  <!-- Bottom Slide Dock -->
+  <div class="bottom-dock-wrapper">
+    <div class="bottom-dock">
+      <a href="cv.html" class="dock-arrow">← CV</a>
+      <div class="dock-segments" aria-label="Indikator Halaman">
+        <a href="index.html" class="dock-segment" title="01 Profil"></a>
+        <a href="cv.html" class="dock-segment" title="02 CV"></a>
+        <a href="proyek.html" class="dock-segment active" title="03 Proyek"></a>
+        <a href="blog.html" class="dock-segment" title="04 Blog"></a>
+        <a href="kontak.html" class="dock-segment" title="05 Kontak"></a>
+      </div>
+      <a href="blog.html" class="dock-arrow">Blog →</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Pribadi &amp; Catatan Teknis — Ryan Hamid Muhammad, S.Tr.T</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="blog">
+  <div class="bg-layer-ambient"></div>
+  <div class="bg-layer-paper"></div>
+  <div class="bg-layer-grid"></div>
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Floating Top Navigation -->
+  <header class="top-nav-wrapper">
+    <nav class="top-nav-pill" aria-label="Navigasi Utama">
+      <a href="index.html" class="brand-monogram">
+        <span class="brand-badge">RH</span>
+        <span class="text-sm font-semibold tracking-tight text-stone-900">Ryan Hamid</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><span class="slide-num">01</span> Profil</a>
+        <a href="cv.html" class="nav-link"><span class="slide-num">02</span> CV</a>
+        <a href="proyek.html" class="nav-link"><span class="slide-num">03</span> Proyek</a>
+        <a href="blog.html" class="nav-link active"><span class="slide-num">04</span> Blog</a>
+        <a href="kontak.html" class="nav-link"><span class="slide-num">05</span> Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide 04: Blog Pribadi -->
+  <main class="page-shell">
+    <section class="mb-7">
+      <span class="eyebrow-label mb-2">Slide 04 · Catatan Pemikiran &amp; Arsitektur</span>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h1 class="font-editorial text-3xl sm:text-4xl font-semibold text-stone-900">
+            Blog Pribadi &amp; Tulisan Teknis
+          </h1>
+          <p class="text-sm text-stone-600 mt-1 max-w-2xl">
+            Esai ringkas mengenai rekayasa kecerdasan buatan, pengembangan aplikasi web, integrasi perangkat keras lapangan, dan arsitektur server.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Filter Topik Blog">
+          <button type="button" data-blog-filter="Semua" class="filter-pill active">Semua</button>
+          <button type="button" data-blog-filter="AI &amp; Keamanan Siber" class="filter-pill">AI &amp; Keamanan</button>
+          <button type="button" data-blog-filter="Web &amp; IoT" class="filter-pill">Web &amp; IoT</button>
+          <button type="button" data-blog-filter="AI Engineering" class="filter-pill">AI Engineering</button>
+          <button type="button" data-blog-filter="Sistem &amp; Infrastruktur" class="filter-pill">Sistem</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daftar Artikel Blog (Diisi oleh js/app.js) -->
+    <section id="blog-list" class="grid grid-cols-1 md:grid-cols-2 gap-6"></section>
+  </main>
+
+  <!-- Modal Pembaca Artikel -->
+  <div id="article-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div id="article-modal-body" class="modal-panel"></div>
+  </div>
+
+  <!-- Bottom Slide Dock -->
+  <div class="bottom-dock-wrapper">
+    <div class="bottom-dock">
+      <a href="proyek.html" class="dock-arrow">← Proyek</a>
+      <div class="dock-segments" aria-label="Indikator Halaman">
+        <a href="index.html" class="dock-segment" title="01 Profil"></a>
+        <a href="cv.html" class="dock-segment" title="02 CV"></a>
+        <a href="proyek.html" class="dock-segment" title="03 Proyek"></a>
+        <a href="blog.html" class="dock-segment active" title="04 Blog"></a>
+        <a href="kontak.html" class="dock-segment" title="05 Kontak"></a>
+      </div>
+      <a href="kontak.html" class="dock-arrow">Kontak →</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

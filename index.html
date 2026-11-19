@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Hamid Muhammad, S.Tr.T — Blog Pribadi &amp; Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="profil">
+  <!-- 4-Layer Atmospheric & Architectural Background -->
+  <div class="bg-layer-ambient"></div>
+  <div class="bg-layer-paper"></div>
+  <div class="bg-layer-grid"></div>
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Floating Top Navigation -->
+  <header class="top-nav-wrapper">
+    <nav class="top-nav-pill" aria-label="Navigasi Utama">
+      <a href="index.html" class="brand-monogram">
+        <span class="brand-badge">RH</span>
+        <span class="text-sm font-semibold tracking-tight text-stone-900">Ryan Hamid</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active"><span class="slide-num">01</span> Profil</a>
+        <a href="cv.html" class="nav-link"><span class="slide-num">02</span> CV</a>
+        <a href="proyek.html" class="nav-link"><span class="slide-num">03</span> Proyek</a>
+        <a href="blog.html" class="nav-link"><span class="slide-num">04</span> Blog</a>
+        <a href="kontak.html" class="nav-link"><span class="slide-num">05</span> Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide 01: Profil & Sampul Editorial -->
+  <main class="page-shell">
+    <section class="editorial-card p-7 sm:p-11 mb-7">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7">
+          <span class="eyebrow-label mb-4">Slide 01 · Arsip Pribadi &amp; Portofolio Rekayasa</span>
+          <h1 class="font-editorial text-4xl sm:text-5xl lg:text-[3.45rem] font-semibold text-stone-900 leading-[1.08] mb-4">
+            Ryan Hamid Muhammad, <span class="text-[#214E52] italic">S.Tr.T</span>
+          </h1>
+          <p class="text-base sm:text-lg font-medium text-stone-700 mb-4">
+            AI Engineering &amp; Full-Stack Web Developer · Lulusan Sarjana Terapan Teknologi Rekayasa Internet (PENS)
+          </p>
+          <p class="text-sm sm:text-[0.95rem] text-stone-600 leading-relaxed max-w-2xl mb-7">
+            Merancang sistem cerdas berbasis kecerdasan buatan, aplikasi web full-stack, serta integrasi perangkat IoT &amp; RFID yang andal untuk kebutuhan industri maupun keamanan kendaraan terhubung (Internet of Vehicles).
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="cv.html" class="btn-primary">
+              Lihat Curriculum Vitae →
+            </a>
+            <a href="proyek.html" class="btn-outline">
+              Jelajahi Portofolio Proyek
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Bingkai Foto Profil & Ringkasan Identitas -->
+        <div class="lg:col-span-5">
+          <div class="sand-panel p-5 sm:p-6 space-y-4">
+            <!-- Bingkai Foto Profil (assets/foto-profil.jpg) -->
+            <div class="relative w-full aspect-[4/4] max-h-72 mx-auto rounded-2xl overflow-hidden border border-stone-900/15 bg-[#214E52]/10">
+              <img
+                src="assets/foto-profil.jpg"
+                alt="Foto Profil Ryan Hamid Muhammad, S.Tr.T"
+                class="w-full h-full object-cover object-top"
+                onerror="this.style.display='none'; document.getElementById('photo-fallback').classList.remove('hidden'); document.getElementById('photo-fallback').classList.add('flex');"
+              />
+              <div id="photo-fallback" class="hidden w-full h-full flex-col items-center justify-center text-center p-4 bg-[#214E52] text-[#FDFCF9]">
+                <span class="font-editorial text-4xl font-bold tracking-wide">RHM</span>
+                <span class="font-code text-[11px] text-[#E6C79C] mt-1">assets/foto-profil.jpg</span>
+              </div>
+            </div>
+
+            <div class="space-y-2 text-xs sm:text-sm pt-1">
+              <div class="flex justify-between gap-2">
+                <span class="text-stone-500">Status</span>
+                <span class="font-medium text-[#214E52] text-right">Siap Berkontribusi · Full-Time</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span class="text-stone-500">Domisili</span>
+                <span class="font-medium text-stone-800 text-right">Lamongan &amp; Surabaya, Jatim</span>
+              </div>
+              <div class="flex justify-between gap-2">
+                <span class="text-stone-500">Almamater</span>
+                <span class="font-medium text-stone-800 text-right">PENS (Lulus Okt 2026)</span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-stone-900/10 flex items-center justify-between text-xs">
+              <span class="font-code text-stone-500">Direktori 5 Slide</span>
+              <a href="kontak.html" class="font-semibold text-[#9A6B3E] hover:underline">Kartu Nama &amp; QR →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sorotan Karya & Tulisan Terhubung -->
+    <section>
+      <div class="flex items-end justify-between gap-4 mb-4">
+        <div>
+          <span class="eyebrow-label mb-1">Sorotan Terpilih</span>
+          <h2 class="font-editorial text-2xl sm:text-3xl font-semibold text-stone-900">
+            Karya Rekayasa &amp; Catatan Teknis
+          </h2>
+        </div>
+        <a href="proyek.html" class="text-xs sm:text-sm font-medium text-[#214E52] hover:underline">
+          Semua Proyek (06) →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <a href="proyek.html?project=iov-ids" class="editorial-card editorial-card-interactive p-6 block no-underline">
+          <span class="font-code text-[11px] uppercase tracking-wider text-[#214E52] font-medium">Riset AI &amp; Keamanan</span>
+          <h3 class="font-editorial text-xl font-semibold text-stone-900 mt-2 mb-2">
+            Deteksi Serangan Siber Berbasis AI untuk Keamanan IoV
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed mb-4">
+            Benchmark arsitektur MLP, 1D-CNN, DCNN, dan MetaIDS pada dataset keamanan lalu lintas kendaraan CAN-Bus.
+          </p>
+          <span class="text-xs font-semibold text-[#9A6B3E]">Buka Studi Kasus →</span>
+        </a>
+
+        <a href="proyek.html?project=rfid-warehouse" class="editorial-card editorial-card-interactive p-6 block no-underline">
+          <span class="font-code text-[11px] uppercase tracking-wider text-[#214E52] font-medium">Web Full-Stack &amp; RFID</span>
+          <h3 class="font-editorial text-xl font-semibold text-stone-900 mt-2 mb-2">
+            Sistem Pelacakan Gudang &amp; Absensi Gerbang Nirkabel
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed mb-4">
+            Integrasi pembaca RFID dan otomasi gerbang nirkabel dengan backend PHP, JavaScript, dan PostgreSQL.
+          </p>
+          <span class="text-xs font-semibold text-[#9A6B3E]">Buka Studi Kasus →</span>
+        </a>
+
+        <a href="blog.html?article=artikel-iov-security" class="editorial-card editorial-card-interactive p-6 block no-underline">
+          <span class="font-code text-[11px] uppercase tracking-wider text-[#9A6B3E] font-medium">Tulisan Blog Terbaru</span>
+          <h3 class="font-editorial text-xl font-semibold text-stone-900 mt-2 mb-2">
+            Merancang Deteksi Intrusi Kendaraan Terhubung (IoV)
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed mb-4">
+            Catatan teknis mengenai tantangan keamanan protokol CAN-Bus dan penerapan deep learning di perangkat edge.
+          </p>
+          <span class="text-xs font-semibold text-[#214E52]">Baca Artikel →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Slide Dock -->
+  <div class="bottom-dock-wrapper">
+    <div class="bottom-dock">
+      <span class="font-code text-xs text-stone-500 pl-2">01 / 05</span>
+      <div class="dock-segments" aria-label="Indikator Halaman">
+        <a href="index.html" class="dock-segment active" title="01 Profil"></a>
+        <a href="cv.html" class="dock-segment" title="02 CV"></a>
+        <a href="proyek.html" class="dock-segment" title="03 Proyek"></a>
+        <a href="blog.html" class="dock-segment" title="04 Blog"></a>
+        <a href="kontak.html" class="dock-segment" title="05 Kontak"></a>
+      </div>
+      <a href="cv.html" class="dock-arrow">Berikutnya: CV →</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

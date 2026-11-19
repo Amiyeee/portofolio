@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Vitae — Ryan Hamid Muhammad, S.Tr.T</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="cv">
+  <div class="bg-layer-ambient"></div>
+  <div class="bg-layer-paper"></div>
+  <div class="bg-layer-grid"></div>
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Floating Top Navigation -->
+  <header class="top-nav-wrapper">
+    <nav class="top-nav-pill" aria-label="Navigasi Utama">
+      <a href="index.html" class="brand-monogram">
+        <span class="brand-badge">RH</span>
+        <span class="text-sm font-semibold tracking-tight text-stone-900">Ryan Hamid</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><span class="slide-num">01</span> Profil</a>
+        <a href="cv.html" class="nav-link active"><span class="slide-num">02</span> CV</a>
+        <a href="proyek.html" class="nav-link"><span class="slide-num">03</span> Proyek</a>
+        <a href="blog.html" class="nav-link"><span class="slide-num">04</span> Blog</a>
+        <a href="kontak.html" class="nav-link"><span class="slide-num">05</span> Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide 02: Curriculum Vitae Lengkap -->
+  <main class="page-shell space-y-6">
+    <!-- Header CV & Tombol Unduh PDF dari Folder assets/ -->
+    <section class="editorial-card p-6 sm:p-9">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 pb-6 border-b border-stone-900/10">
+        <div>
+          <span class="eyebrow-label mb-2">Slide 02 · Rekam Jejak &amp; Kompetensi</span>
+          <h1 class="font-editorial text-3xl sm:text-4xl font-semibold text-stone-900">
+            Curriculum Vitae
+          </h1>
+          <p class="text-sm text-stone-600 mt-1">
+            Ryan Hamid Muhammad, S.Tr.T — Sarjana Terapan Teknologi Rekayasa Internet (PENS)
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="assets/CV-Ryan-Hamid-Muhammad.pdf"
+            download="CV-Ryan-Hamid-Muhammad.pdf"
+            class="btn-primary"
+          >
+            Unduh CV &amp; Ijazah (PDF) ↓
+          </a>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-[0.95rem] text-stone-700 leading-relaxed pt-5">
+        Lulusan Sarjana Terapan Teknologi Rekayasa Internet dari Politeknik Elektronika Negeri Surabaya (PENS) dengan keahlian di bidang pengembangan kecerdasan buatan (AI), pemrograman web full-stack, manajemen basis data, serta integrasi perangkat IoT/RFID. Berpengalaman membangun sistem pemindaian absensi, gerbang nirkabel industri, serta framework deteksi serangan siber berbasis deep learning untuk keamanan Internet of Vehicles (IoV).
+      </p>
+    </section>
+
+    <!-- Pengalaman Kerja & Pendidikan -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Pengalaman Kerja -->
+      <section class="editorial-card p-6 sm:p-7">
+        <span class="eyebrow-label mb-2">Pengalaman Profesional</span>
+        <h2 class="font-editorial text-2xl font-semibold text-stone-900 mb-5">
+          Riwayat Kerja &amp; Implementasi
+        </h2>
+
+        <div class="relative pl-5 border-l-2 border-[#214E52]/30 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="font-semibold text-stone-900 text-base">PT Lintech Duta Pratama</h3>
+            <span class="font-code text-xs px-2.5 py-0.5 rounded-full bg-[#214E52]/10 text-[#214E52]">
+              Jan – Jun 2025
+            </span>
+          </div>
+          <p class="text-xs font-semibold text-[#9A6B3E]">IT Support &amp; System Developer Intern</p>
+          <ul class="list-disc pl-4 text-sm text-stone-600 space-y-1.5 pt-2">
+            <li>Merancang dan mengimplementasikan proyek pemindaian absensi berbasis web serta integrasi sistem gerbang nirkabel (wireless gate).</li>
+            <li>Melakukan pemeliharaan infrastruktur jaringan lokal, perangkat keras kerja, dan troubleshooting operasional harian.</li>
+            <li>Menyusun dokumentasi teknis alur kerja sistem dan mendampingi pengguna internal dalam pengoperasian perangkat.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Pendidikan -->
+      <section class="editorial-card p-6 sm:p-7">
+        <span class="eyebrow-label mb-2">Latar Belakang Akademik</span>
+        <h2 class="font-editorial text-2xl font-semibold text-stone-900 mb-5">
+          Riwayat Pendidikan
+        </h2>
+
+        <div class="space-y-5">
+          <div class="relative pl-5 border-l-2 border-[#9A6B3E]/40">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-semibold text-stone-900 text-base">Politeknik Elektronika Negeri Surabaya (PENS)</h3>
+              <span class="font-code text-xs px-2.5 py-0.5 rounded-full bg-[#9A6B3E]/12 text-[#9A6B3E]">
+                Lulus Okt 2026
+              </span>
+            </div>
+            <p class="text-xs font-semibold text-[#214E52] mt-0.5">
+              Sarjana Terapan (S.Tr.T) — Teknologi Rekayasa Internet
+            </p>
+            <p class="text-sm text-stone-600 mt-1.5">
+              Tugas Akhir: <em>Rancang Bangun Framework Deteksi Serangan Siber Berbasis Kecerdasan Buatan untuk Keamanan IoV</em>.
+            </p>
+          </div>
+
+          <div class="relative pl-5 border-l-2 border-stone-300">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-semibold text-stone-900 text-base">SMAU BP Amanatul Ummah, Mojokerto</h3>
+              <span class="font-code text-xs text-stone-500">Pendidikan Menengah Atas</span>
+            </div>
+            <p class="text-sm text-stone-600 mt-1">
+              Menyelesaikan pendidikan menengah atas dengan penguatan dasar sains, logika matematika, dan kedisiplinan akademik.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Matriks Hard Skills (Terhubung ke Proyek) -->
+    <section class="editorial-card p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-5">
+        <div>
+          <span class="eyebrow-label mb-1">Kompetensi Teknis (Hard Skills)</span>
+          <h2 class="font-editorial text-2xl sm:text-3xl font-semibold text-stone-900">
+            Matriks Keahlian Rekayasa
+          </h2>
+        </div>
+        <p class="text-xs text-stone-500">Klik lencana keahlian untuk melihat proyek terkait →</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="sand-panel p-5">
+          <h3 class="font-code text-xs uppercase tracking-wider text-[#214E52] font-semibold mb-3">
+            01 · AI &amp; Keamanan Data
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="proyek.html?skill=Python" class="skill-chip">Python</a>
+            <a href="proyek.html?skill=TensorFlow" class="skill-chip">TensorFlow</a>
+            <a href="proyek.html?skill=PyTorch" class="skill-chip">PyTorch</a>
+            <a href="proyek.html?skill=Deep%20Learning" class="skill-chip">Deep Learning</a>
+            <a href="proyek.html?skill=Keamanan%20IoV" class="skill-chip">Keamanan IoV</a>
+            <a href="proyek.html?skill=LLM" class="skill-chip">LLM &amp; Ollama</a>
+            <a href="proyek.html?skill=Data%20Analysis" class="skill-chip">Data Analysis</a>
+          </div>
+        </div>
+
+        <div class="sand-panel p-5">
+          <h3 class="font-code text-xs uppercase tracking-wider text-[#214E52] font-semibold mb-3">
+            02 · Web &amp; Full-Stack
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="proyek.html?skill=PHP" class="skill-chip">PHP &amp; Laravel</a>
+            <a href="proyek.html?skill=JavaScript" class="skill-chip">JavaScript (ES6+)</a>
+            <a href="proyek.html?skill=Full-Stack%20Web" class="skill-chip">Full-Stack Web</a>
+            <a href="proyek.html?skill=Streamlit" class="skill-chip">Streamlit &amp; Dash</a>
+            <a href="proyek.html?skill=PostgreSQL" class="skill-chip">PostgreSQL &amp; MySQL</a>
+          </div>
+        </div>
+
+        <div class="sand-panel p-5">
+          <h3 class="font-code text-xs uppercase tracking-wider text-[#214E52] font-semibold mb-3">
+            03 · Sistem, Cloud &amp; IoT
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="proyek.html?skill=Linux" class="skill-chip">Linux Environment</a>
+            <a href="proyek.html?skill=Nginx" class="skill-chip">Nginx &amp; HAProxy</a>
+            <a href="proyek.html?skill=Grafana" class="skill-chip">Grafana &amp; InfluxDB</a>
+            <a href="proyek.html?skill=RFID" class="skill-chip">RFID &amp; IoT Gate</a>
+            <a href="proyek.html?skill=Troubleshooting" class="skill-chip">System Troubleshooting</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills / Keterampilan Interpersonal & Profesional -->
+    <section class="editorial-card p-6 sm:p-8">
+      <div class="mb-5">
+        <span class="eyebrow-label mb-1">Kompetensi Interpersonal (Soft Skills)</span>
+        <h2 class="font-editorial text-2xl sm:text-3xl font-semibold text-stone-900">
+          Keterampilan Profesional &amp; Cara Kerja
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="sand-panel p-5">
+          <p class="font-code text-xs text-[#9A6B3E] mb-1">01 · Analytical Mindset</p>
+          <h3 class="font-semibold text-stone-900 text-sm mb-1.5">Pemecahan Masalah &amp; Analisis Logika</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Terbiasa menelusuri akar gangguan perangkat lunak, jaringan, maupun anomali data secara sistematis dan berbasis pengujian.
+          </p>
+        </div>
+
+        <div class="sand-panel p-5">
+          <p class="font-code text-xs text-[#9A6B3E] mb-1">02 · Execution &amp; Delivery</p>
+          <h3 class="font-semibold text-stone-900 text-sm mb-1.5">Manajemen Proyek Teknologi</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Merencanakan tahapan pengembangan sistem dari perumusan kebutuhan, arsitektur aplikasi, pengujian beban, hingga dokumentasi akhir.
+          </p>
+        </div>
+
+        <div class="sand-panel p-5">
+          <p class="font-code text-xs text-[#9A6B3E] mb-1">03 · Clarity</p>
+          <h3 class="font-semibold text-stone-900 text-sm mb-1.5">Komunikasi Teknis &amp; Presentasi</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Mampu menjelaskan rancangan arsitektur AI, alur sistem web, dan laporan evaluasi teknis secara ringkas kepada rekan tim maupun klien.
+          </p>
+        </div>
+
+        <div class="sand-panel p-5">
+          <p class="font-code text-xs text-[#9A6B3E] mb-1">04 · Collaboration</p>
+          <h3 class="font-semibold text-stone-900 text-sm mb-1.5">Kerja Sama Tim Lintas Divisi</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Berpengalaman berkolaborasi dengan tim operasional lapangan dan pengguna akhir saat mengimplementasikan sistem di lingkungan industri.
+          </p>
+        </div>
+
+        <div class="sand-panel p-5">
+          <p class="font-code text-xs text-[#9A6B3E] mb-1">05 · Growth &amp; Agility</p>
+          <h3 class="font-semibold text-stone-900 text-sm mb-1.5">Adaptabilitas &amp; Pembelajaran Cepat</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Cepat beradaptasi dengan ekosistem teknologi baru, mulai dari kerangka kerja machine learning hingga pengembangan web modern.
+          </p>
+        </div>
+
+        <div class="sand-panel p-5">
+          <p class="font-code text-xs text-[#9A6B3E] mb-1">06 · Reliability</p>
+          <h3 class="font-semibold text-stone-900 text-sm mb-1.5">Ketelitian &amp; Manajemen Waktu</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Menjaga akurasi struktur basis data, kebersihan kode, serta konsistensi penyelesaian target riset maupun pengembangan aplikasi.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Slide Dock -->
+  <div class="bottom-dock-wrapper">
+    <div class="bottom-dock">
+      <a href="index.html" class="dock-arrow">← Profil</a>
+      <div class="dock-segments" aria-label="Indikator Halaman">
+        <a href="index.html" class="dock-segment" title="01 Profil"></a>
+        <a href="cv.html" class="dock-segment active" title="02 CV"></a>
+        <a href="proyek.html" class="dock-segment" title="03 Proyek"></a>
+        <a href="blog.html" class="dock-segment" title="04 Blog"></a>
+        <a href="kontak.html" class="dock-segment" title="05 Kontak"></a>
+      </div>
+      <a href="proyek.html" class="dock-arrow">Proyek →</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
